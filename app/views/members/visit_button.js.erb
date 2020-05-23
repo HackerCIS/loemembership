@@ -1,0 +1,31 @@
+oldstr = $("#phonenumber").html();
+
+if(oldstr.length >=13){
+    alert("잘못된 번호입니다. 확인부탁드려요");
+}
+
+//취소 눌렸을때
+if(<%= @num %> == 11 && oldstr.length != 9){
+    newstr = oldstr.slice(0,-1);
+    $("#phonenumber").html(newstr);
+} else if(<%= @num %> == 11 && oldstr.length == 9){
+    newstr = oldstr.slice(0,-2);
+    $("#phonenumber").html(newstr);
+}else {
+    newstr = oldstr.concat(<%= @num %>);
+    $("#phonenumber").html(newstr);
+}
+
+// - 넣기
+if(newstr.length%8 ==0 && <%= @num %> != 11){
+    newstr = newstr.concat('-');
+    $("#phonenumber").html(newstr);
+}
+
+// 완전 리셋
+if(<%= @num %> == '10'){
+    newstr = "010-";
+    $("#phonenumber").html(newstr);
+}
+
+$("#phonenumber1").val(newstr);

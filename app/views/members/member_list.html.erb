@@ -1,0 +1,50 @@
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>이름</th>
+        <th>학교</th>
+        <th>학년</th>
+        <th>생일</th>
+        <th>전화번호</th>
+        <th>방문횟수</th>
+        <th>포인트</th>
+        <th>레벨</th>
+        <th></th>
+    </tr>
+<% @members.each do |member| %>
+    <tr>
+        <td>
+            <%= member.id %>
+        </td>
+        <td>
+            <%= member.name %>
+        </td>
+        <td>
+            <%= member.school %>
+        </td>
+        <td>
+            <%= member.grade %>
+        </td>
+        <td>
+            <%= member.birth %>
+        </td>
+        <td>
+            <%= member.phone_number1 %>-<%= member.phone_number2 %>-<%= member.phone_number3 %> 
+        </td>
+        <td>
+            <%= member.count_visit %>
+        </td>
+        <td>
+            <%= member.point %>
+        </td>
+        <td>
+            <%= member.level %>
+        </td>
+        <td>
+            <a href="/members/m_form/<%= member.id %>">수정하기</a>
+            <a href="/members/member_delete/<%= member.id %>">삭제하기</a>
+        </td>
+    </tr>
+<% end %>
+
+</table>

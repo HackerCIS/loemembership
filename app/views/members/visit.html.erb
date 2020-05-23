@@ -1,0 +1,56 @@
+<div id="app">
+    <div class="container back-img">
+        <section class="left-half">
+            <div class="contents">
+                <p class="main-notice">휴대폰 번호를<br>입력하세요!</p>
+                <p class="subtitle">이곳은</p>
+                <div class="location-info">
+                    <p class="logo-bg-text dp-ib">엘오이</p>
+                    <p class="subtitle-text dp-ib">본점입니다.</p>
+                </div>
+                <div class="location-info">
+                    <p class="notice"></p>
+                </div>
+                <div class="bottom-before">
+                    <i class="fa fa-chevron-left dp-ib"></i>
+                    <p class="subtitle-text-bd dp-ib ml-20">이전으로</p>
+                </div>
+            </div>
+        </section>
+        
+    <form action="/members/visit" method="POST" data-remote="true">
+            
+        <section class="right-half">
+            <div class="contents">
+                <div class="inputed">
+                    <div id="phonenumber">010-</div>
+                    <input type="text" name="phonenumber1" id="phonenumber1">
+                </div>
+                
+                <div class="numpad">
+                    <div class="keypad">
+                        <span class="key 1"><a href="/members/visit_button/1" data-remote="true">1</a></span>
+                        <span class="key 2"><a href="/members/visit_button/2" data-remote="true">2</a></span>  
+                        <span class="key 3"><a href="/members/visit_button/3" data-remote="true">3</a></span><br>
+                        <span class="key 4"><a href="/members/visit_button/4" data-remote="true">4</a></span>
+                        <span class="key 5"><a href="/members/visit_button/5" data-remote="true">5</a></span>
+                        <span class="key 6"><a href="/members/visit_button/6" data-remote="true">6</a></span><br>
+                        <span class="key 7"><a href="/members/visit_button/7" data-remote="true">7</a></span>
+                        <span class="key 8"><a href="/members/visit_button/8" data-remote="true">8</a></span>
+                        <span class="key 9"><a href="/members/visit_button/9" data-remote="true">9</a></span><br>
+                        <span class="key cancel"><a href="/members/visit_button/10" data-remote="true">취소</a></span>
+                        <span class="key 0"><a href="/members/visit_button/0" data-remote="true">0</a></span>
+                        <span class="key re"><a href="/members/visit_button/11" data-remote="true"><i class="fa fa-undo"></i></a></span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="numbutton">확인</button>
+            </div>
+        </section>
+        
+    </form>
+        
+        <a href="/members/visit_button" data-remote="true">테스트</a>
+        
+    </div>
+</div>

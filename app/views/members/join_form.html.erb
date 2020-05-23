@@ -1,0 +1,37 @@
+<form action="/members/join" method="POST">
+    이름:
+    <input type="text" name="name"><br>
+    
+    학교:
+    <input type="text" name="school">
+    학년:
+    <select name="grade">
+        <option value="">학년선택</option>
+        <option value="중1">중1</option>
+        <option value="중2">중2</option>
+        <option value="중3">중3</option>
+        <option value="고1">고1</option>
+        <option value="고2">고2</option>
+        <option value="고3">고3</option>
+    </select><br>
+    
+    생일: 
+    <input type="date" name="birth" value="2000-01-01"><br>
+    
+    전화번호:
+    <input type="text" name="phone_number1" style="width:40px;">
+    -
+    <input type="text" name="phone_number2" style="width:40px;">
+    -
+    <input type="text" name="phone_number3" style="width:40px;"><br>
+    
+    Level:
+    <select name="level">
+        <option value="">레벨선택</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+    </select><br>
+    
+    <button type="submit">회원가입</button>
+</form>
