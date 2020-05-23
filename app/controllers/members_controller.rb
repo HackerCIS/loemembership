@@ -18,7 +18,11 @@ class MembersController < ApplicationController
 
     @member.save
     
-    redirect_to "/members/join_form"
+    redirect_to "/members/join_completed"
+  end
+  
+  def join_completed
+    
   end
 
   def m_form

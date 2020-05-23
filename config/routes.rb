@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'members/member_list' => "members#member_list"
   get 'members/member_show' => "members#member_show"
   get 'members/member_delete' => "members#member_delete"
+  get 'members/join_completed' => "members#join_completed"
   
   post 'members/visit' => "members#visit"
   get 'members/visit' => "members#visit"
